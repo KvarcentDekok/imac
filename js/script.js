@@ -25,12 +25,18 @@ let currentShift = 0;
 
 function iterateSlides(number) {
     for (let i = 0; i < slides.length; i++) {
+        const link = slides[i].querySelector('a');
+
         slides[i].dataset.active = 'false';
+        link.tabIndex = '-1';
     }
 
     for (let i = 0; i < number; i++) {
         if (slides[i]) {
+            const link = slides[i].querySelector('a');
+
             slides[i].dataset.active = 'true';
+            link.tabIndex = '0';
         }
     }
 }
@@ -59,11 +65,15 @@ function controlNextClickHandler() {
 
     if (nextSlide) {
         const slideWidth = nextSlide.clientWidth;
+        const firstActiveLink = firstActiveSlide.querySelector('a');
+        const nextLink = nextSlide.querySelector('a');
 
         currentShift -= (slideWidth + EXTRA_SHIFT);
         carouselList.style.transform = `translate(${String(currentShift)}px)`;
         firstActiveSlide.dataset.active = 'false';
+        firstActiveLink.tabIndex = '-1';
         nextSlide.dataset.active = 'true';
+        nextLink.tabIndex = '0';
         controlPrev.classList.remove('carousel__control--disable');
 
         if (!afterNextSlide) {
@@ -80,11 +90,15 @@ function controlPrevClickHandler() {
 
     if (prevSlide) {
         const slideWidth = prevSlide.clientWidth;
+        const lastActiveLink = lastActiveSlide.querySelector('a');
+        const prevLink = prevSlide.querySelector('a');
 
         currentShift += (slideWidth + EXTRA_SHIFT);
         carouselList.style.transform = `translate(${String(currentShift)}px)`;
         lastActiveSlide.dataset.active = 'false';
+        lastActiveLink.tabIndex = '-1';
         prevSlide.dataset.active = 'true';
+        prevLink.tabIndex = '0';
         controlNext.classList.remove('carousel__control--disable');
 
         if (!beforePrevSlide) {
