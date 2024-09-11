@@ -1,0 +1,12 @@
+.content {
+    max-width: 690px;
+}
+
+.content p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #1A1A1A;
+}

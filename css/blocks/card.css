@@ -1,0 +1,44 @@
+.card {
+    display: block;
+    padding: 16px;
+    height: 100%;
+
+    text-decoration: none;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    transition: all 200ms linear;
+}
+
+.card:active {
+    background-color: #F1F1F1;
+}
+
+.card--image {
+    padding-right: 126px;
+
+    background: url("../../img/card-image.webp") no-repeat right center;
+}
+
+.card__title {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #1A1A1A;
+
+    transition: all 200ms linear;
+}
+
+.card:hover .card__title {
+    color: #36BA5F;
+}
+
+.card__text {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #949494;
+}
+

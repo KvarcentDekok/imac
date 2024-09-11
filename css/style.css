@@ -1,0 +1,14 @@
+@import url("fonts.css");
+@import url("global.css");
+
+@import url("blocks/container.css");
+@import url("blocks/home.css");
+@import url("blocks/button.css");
+@import url("blocks/social.css");
+@import url("blocks/icon-button.css");
+@import url("blocks/section.css");
+@import url("blocks/carousel.css");
+@import url("blocks/card.css");
+@import url("blocks/reference.css");
+@import url("blocks/article.css");
+@import url("blocks/content.css");

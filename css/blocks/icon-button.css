@@ -1,0 +1,56 @@
+.icon-button {
+    width: 56px;
+    height: 56px;
+    border: none;
+    padding: 0;
+    display: block;
+
+    text-decoration: none;
+
+    background-color: #F9F9F9;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 13px;
+    transition: all 200ms linear;
+}
+
+.icon-button:hover {
+    box-shadow: 0 0 0 3px rgba(54, 186, 95, 0.5), 0 0 0 1px #FFFFFF;
+}
+
+.icon-button:active {
+    box-shadow: 0 0 0 3px #F1F1F1, 0 0 0 1px #FFFFFF;
+    background-color: #F1F1F1;
+}
+
+.icon-button--vk {
+    background-image: url("../../img/icon-vk.svg");
+}
+
+.icon-button--instagram {
+    background-image: url("../../img/icon-instagram.svg");
+}
+
+.icon-button--tiktok {
+    background-image: url("../../img/icon-tiktok.svg");
+}
+
+.icon-button--twitter {
+    background-image: url("../../img/icon-twitter.svg");
+}
+
+.icon-button--dzen {
+    background-image: url("../../img/icon-dzen.svg");
+}
+
+.icon-button--facebook {
+    background-image: url("../../img/icon-facebook.svg");
+}
+
+.icon-button--phone {
+    background-image: url("../../img/icon-phone-alt.svg");
+}
+
+.icon-button--mail {
+    background-image: url("../../img/icon-mail-alt.svg");
+}
